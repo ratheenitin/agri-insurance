@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+
+      <style>
+
+        body{
+          background-color: grey;
+          transition: all 0.5s ease;
+          margin: 0;
+          padding: 0;
+        }
+        .container{
+          margin-top: 10%;
+        }
+        .icon{
+          font-size: 30em;
+          justify: center;
+          margin-left: 28%;
+        }
+        .jumbotron{
+          margin-top: 5%;
+          text-align: center;
+          width: 90%;
+          margin-left: 5%;
+          background: none;
+          font-size: 5em;
+          backgroun-size: cover;
+
+        }
+        .page2{
+          width: 90%;
+          height: 70%;
+          margin-top:2%;
+        }
+
+        .bg-active{
+          background-color: #eebe95;
+        }
+
+        #second{
+          font-size: 3em;
+        }
+
+        .page1{
+          background: url("./img/6.jpg");
+          background-size: cover;
+          padding: 50px;
+        }
+
+
+        .wrapper{
+    <!-- position: fixed; -->
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  a{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: block;
+    width: 500px;
+    height: 100px;
+    line-height: 90px;
+    font-size: 30px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #5f6416;
+    border: 2px solid #5f6416;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+  }
+
+  a span{
+    position: relative;
+    z-index: 2;
+  }
+
+  a:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #5f6416;
+    transition: all .40s;
+  }
+
+  a:hover{
+    color: #fff;
+  }
+
+  a:hover:after{
+    width: 100%;
+  }
+
+  .navigation{
+    font-size: 20px;
+    padding-top: 5px;
+    padding-left: 5px;
+    position: fixed;
+  }
+
+      </style>
+  </head
+  <body>
+
+
+    <!-- <nav class="navbar navbar-default navbar-fixed-top ">
+
+    <div class="navbar-header">
+      <p class="navigation"><span class="glyphicon glyphicon-grain"></span>AGRI APP</p>
+
+
+  </div>
+</nav> -->
+
+
+    <div class="container" id="particles-js">
+
+
+    <span class="icon glyphicon glyphicon-grain"></span>
+
+
+    </div>
+
+
+
+
+      <div class="jumbotron">
+          <h1 id="second">AGRI APP</h1>
+          <h3>Decentralized Crop Insurance Against Floods and Droughts</h3>
+          <h2 >Protection is just one click Away!</h2>
+
+      </div>
+      <div class="jumbotron page1">
+        <!-- <img src="6.jpg" class="page2"> -->
+
+          <a href="./newPolicy.html" class="wrapper"><span>CREATE POLICY</span></a>
+            <a href="./viewPolicies.html" class="wrapper"><span>VIEW POLICIES</span></a>
+              <a href="./claim.html" target="_blank" class="wrapper"><span>CLAIM INSURANCE</span></a>
+
+
+</div>
+
+      <script type="text/javascript" src="js/app1.js">
+
+      </script>
+
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+      
+  </body>
+</html>
